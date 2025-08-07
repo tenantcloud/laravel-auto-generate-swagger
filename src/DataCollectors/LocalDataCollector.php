@@ -33,7 +33,7 @@ class LocalDataCollector implements DataCollectorInterface
 		return self::$data;
 	}
 
-	public function saveData(string $filePath = null)
+	public function saveData(?string $filePath = null)
 	{
 		$filePath = $filePath ?? $this->prodFilePath;
 
